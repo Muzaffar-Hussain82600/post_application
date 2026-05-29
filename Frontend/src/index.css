@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body #root {
+  height: 100%;
+  width: 100%;
+}
+html {
+  font-family: 'Arial', sans-serif;
+}
+.create-post-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f9f6f6;
+  
+}
+.create-post-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.create-post-section form input, .create-post-section form textarea {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+}
+.create-post-section form button {
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px;
+  background-color: #40c365;
+  color: #fff;
+  cursor: pointer;
+} 
+
+.create-post-section form button:hover {
+  background-color: #38a856;
+}
+.create-post-section form input:focus, .create-post-section form textarea:focus {
+  outline: none;
+  border: 2px solid #40c365;
+}
+
+.feed-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: start;
+  height: 100%;
+  width: 100%;
+}
+.feed-section .post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.feed-section .post h2 {
+  margin-bottom: 10px;
+}
+.feed-section .post p {
+  color: #555;
+}     
+
+.feed-section .post .post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.feed-section .post .post-actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;   
+  background-color: #40c365;
+  color: #fff;
+  cursor: pointer;
+}
+.feed-section .post .post-actions button:hover {
+  background-color: #38a856;  
+}
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+ .post{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+
+.post h2 {
+  margin-bottom: 10px;
+}
+.post-cart
+  {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+.post-cart button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #40c365;
+  color: #fff;
+  cursor: pointer;
+}
+.post-cart button:hover {
+  background-color: #38a856;
+} 
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
